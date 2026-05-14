@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Primeira Venda em 48h no Digital</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+
+<!-- ═══ META PIXEL ═══ -->
+<!-- INSTRUÇÃO: Substitua 993337939709365 pelo seu ID real do Pixel da Meta -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '993337939709365');
+fbq('track', 'PageView');
+fbq('track', 'ViewContent', {
+  content_name: 'Primeira Venda em 48h no Digital',
+  content_category: 'Ebook',
+  value: 27.90,
+  currency: 'BRL'
+});
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=993337939709365&ev=PageView&noscript=1"/></noscript>
+
+<!-- ═══ MICROSOFT CLARITY ═══ -->
+<!-- INSTRUÇÃO: Substitua SEU_CLARITY_ID pelo seu ID do Clarity -->
+<script type="text/javascript">
+(function(c,l,a,r,i,t,y){
+c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "SEU_CLARITY_ID");
+</script>
+
+<!-- ═══ HOTJAR ═══ -->
+<!-- INSTRUÇÃO: Substitua SEU_HOTJAR_ID pelo seu ID do Hotjar -->
+<script>
+(function(h,o,t,j,a,r){
+h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+h._hjSettings={hjid:'SEU_HOTJAR_ID',hjsv:6};
+a=o.getElementsByTagName('head')[0];
+r=o.createElement('script');r.async=1;
+r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+a.appendChild(r);
+})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+<style>
+  :root {
+    --bg: #0a0a0a;
+    --bg2: #111111;
+    --bg3: #161616;
+    --accent: #d4f542;
+    --accent2: #b8e032;
+    --white: #f5f5f0;
+    --muted: #888880;
+    --border: rgba(212,245,66,0.12);
+    --border2: rgba(255,255,255,0.07);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--white);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  /* NOISE OVERLAY */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.4;
+  }
+
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ─── TOPBAR ─── */
+  .topbar {
+    background: var(--accent);
+    color: #0a0a0a;
+    text-align: center;
+    padding: 10px 20px;
+    font-family: 'Syne', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 10;
+  }
+
+  /* ─── HERO ─── */
+  .hero {
+    padding: 64px 0 56px;
+    position: relative;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(212,245,66,0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(212,245,66,0.1);
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    padding: 6px 14px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--accent);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+    animation: fadeUp 0.6s ease both;
+  }
+
+  .badge::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: var(--accent);
+    border-radius: 50%;
+    box-shadow: 0 0 6px var(--accent);
+    animation: pulse 2s ease infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.3); }
+  }
+
+  .headline {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(34px, 8vw, 52px);
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+    animation: fadeUp 0.6s 0.1s ease both;
+  }
+
+  .headline em {
+    font-style: normal;
+    color: var(--accent);
+    position: relative;
+  }
+
+  .headline em::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--accent);
+    border-radius: 2px;
+    opacity: 0.4;
+  }
+
+  .subheadline {
+    font-size: 17px;
+    font-weight: 300;
+    color: #b0b0a8;
+    line-height: 1.65;
+    max-width: 520px;
+    margin-bottom: 36px;
+    animation: fadeUp 0.6s 0.2s ease both;
+  }
+
+  .subheadline strong {
+    color: var(--white);
+    font-weight: 500;
+  }
+
+  .cta-primary {
+    display: block;
+    width: 100%;
+    background: var(--accent);
+    color: #0a0a0a;
+    text-decoration: none;
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 17px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    padding: 18px 24px;
+    border-radius: 14px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 0 40px rgba(212,245,66,0.25), 0 8px 24px rgba(0,0,0,0.4);
+    animation: fadeUp 0.6s 0.3s ease both;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cta-primary::before {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent);
+    transition: left 0.5s ease;
+  }
+
+  .cta-primary:hover::before { left: 160%; }
+  .cta-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 60px rgba(212,245,66,0.35), 0 12px 32px rgba(0,0,0,0.5);
+  }
+  .cta-primary:active { transform: translateY(0); }
+
+  .cta-sub {
+    text-align: center;
+    font-size: 12.5px;
+    color: var(--muted);
+    margin-top: 12px;
+    animation: fadeUp 0.6s 0.4s ease both;
+  }
+
+  .cta-sub span {
+    color: var(--accent);
+    font-weight: 500;
+  }
+
+  /* ─── SOCIAL PROOF BAR ─── */
+  .proof-bar {
+    padding: 28px 0;
+    border-top: 1px solid var(--border2);
+    border-bottom: 1px solid var(--border2);
+    margin: 48px 0;
+  }
+
+  .proof-bar-inner {
+    display: flex;
+    justify-content: space-around;
+    gap: 16px;
+  }
+
+  .proof-item {
+    text-align: center;
+    flex: 1;
+  }
+
+  .proof-number {
+    font-family: 'Syne', sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--accent);
+    display: block;
+    line-height: 1;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .proof-label {
+    font-size: 12px;
+    color: var(--muted);
+    line-height: 1.3;
+  }
+
+  .proof-divider {
+    width: 1px;
+    background: var(--border2);
+  }
+
+  /* ─── SECTIONS ─── */
+  section {
+    padding: 56px 0;
+  }
+
+  .section-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .section-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  .section-title {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(26px, 6vw, 36px);
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin-bottom: 14px;
+  }
+
+  .section-desc {
+    font-size: 16px;
+    color: #9a9a92;
+    line-height: 1.65;
+    margin-bottom: 36px;
+  }
+
+  /* ─── BENEFITS ─── */
+  .benefits-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .benefit-card {
+    background: var(--bg2);
+    border: 1px solid var(--border2);
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    transition: border-color 0.25s, background 0.25s;
+  }
+
+  .benefit-card:hover {
+    border-color: var(--border);
+    background: var(--bg3);
+  }
+
+  .benefit-icon {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    background: rgba(212,245,66,0.08);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+  }
+
+  .benefit-text h3 {
+    font-family: 'Syne', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: var(--white);
+  }
+
+  .benefit-text p {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.55;
+  }
+
+  /* ─── HOW IT WORKS ─── */
+  .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: relative;
+  }
+
+  .steps::before {
+    content: '';
+    position: absolute;
+    left: 19px;
+    top: 32px;
+    bottom: 32px;
+    width: 1px;
+    background: linear-gradient(to bottom, var(--accent), transparent);
+    opacity: 0.3;
+  }
+
+  .step {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 20px 0;
+  }
+
+  .step-num {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    background: var(--accent);
+    color: #0a0a0a;
+    border-radius: 50%;
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .step-content h3 {
+    font-family: 'Syne', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 5px;
+    padding-top: 6px;
+  }
+
+  .step-content p {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  /* ─── OBJECTIONS ─── */
+  .objections-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .objection {
+    background: var(--bg2);
+    border: 1px solid var(--border2);
+    border-radius: 14px;
+    overflow: hidden;
+  }
+
+  .objection-q {
+    padding: 16px 18px;
+    font-size: 14.5px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+
+  .objection-q::before {
+    content: '✕';
+    color: #c0392b;
+    font-size: 11px;
+    font-weight: 700;
+    background: rgba(192,57,43,0.12);
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .objection-a {
+    padding: 0 18px 16px 52px;
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  .objection-a strong {
+    color: var(--accent);
+    font-weight: 500;
+  }
+
+  /* ─── OFFER ─── */
+  .offer-card {
+    background: var(--bg2);
+    border: 1px solid rgba(212,245,66,0.2);
+    border-radius: 24px;
+    padding: 36px 28px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .offer-card::before {
+    content: '';
+    position: absolute;
+    top: -80px;
+    right: -80px;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(212,245,66,0.07) 0%, transparent 70%);
+  }
+
+  .offer-badge {
+    display: inline-block;
+    background: rgba(212,245,66,0.12);
+    border: 1px solid rgba(212,245,66,0.25);
+    color: var(--accent);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    border-radius: 100px;
+    margin-bottom: 20px;
+  }
+
+  .offer-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    line-height: 1.2;
+  }
+
+  .offer-desc {
+    font-size: 14px;
+    color: var(--muted);
+    margin-bottom: 28px;
+    line-height: 1.6;
+  }
+
+  .price-block {
+    margin-bottom: 28px;
+  }
+
+  .price-old {
+    font-size: 14px;
+    color: var(--muted);
+    text-decoration: line-through;
+    margin-bottom: 4px;
+  }
+
+  .price-new {
+    font-family: 'Syne', sans-serif;
+    font-size: 52px;
+    font-weight: 800;
+    color: var(--accent);
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+
+  .price-new sup {
+    font-size: 22px;
+    font-weight: 700;
+    vertical-align: super;
+    letter-spacing: 0;
+  }
+
+  .price-note {
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: 6px;
+  }
+
+  .includes {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 28px;
+  }
+
+  .includes li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #c5c5be;
+  }
+
+  .includes li::before {
+    content: '✓';
+    color: #0a0a0a;
+    background: var(--accent);
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    border-radius: 50%;
+    font-size: 11px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* ─── GUARANTEE ─── */
+  .guarantee-card {
+    background: var(--bg2);
+    border: 1px solid var(--border2);
+    border-radius: 20px;
+    padding: 32px 24px;
+    text-align: center;
+    position: relative;
+  }
+
+  .guarantee-icon {
+    font-size: 48px;
+    display: block;
+    margin-bottom: 16px;
+    filter: drop-shadow(0 0 12px rgba(212,245,66,0.3));
+  }
+
+  .guarantee-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 12px;
+  }
+
+  .guarantee-title span {
+    color: var(--accent);
+  }
+
+  .guarantee-text {
+    font-size: 14.5px;
+    color: var(--muted);
+    line-height: 1.7;
+    max-width: 440px;
+    margin: 0 auto;
+  }
+
+  /* ─── FINAL CTA ─── */
+  .final-cta {
+    padding: 64px 0 80px;
+    text-align: center;
+  }
+
+  .final-cta .section-title {
+    margin-bottom: 12px;
+  }
+
+  .final-cta .section-desc {
+    margin-bottom: 32px;
+  }
+
+  .urgency-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: 14px;
+  }
+
+  .urgency-dot {
+    width: 7px;
+    height: 7px;
+    background: #e74c3c;
+    border-radius: 50%;
+    animation: pulse 1.5s ease infinite;
+  }
+
+  /* ─── FOOTER ─── */
+  footer {
+    border-top: 1px solid var(--border2);
+    padding: 32px 0;
+    text-align: center;
+    font-size: 12px;
+    color: #555550;
+    line-height: 1.7;
+  }
+
+  footer a {
+    color: var(--muted);
+    text-decoration: none;
+  }
+
+  footer a:hover { color: var(--white); }
+
+  /* ─── DIVIDER ─── */
+  .divider {
+    height: 1px;
+    background: var(--border2);
+    margin: 0;
+  }
+
+  /* ─── ANIMATIONS ─── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .fade-in {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.55s ease, transform 0.55s ease;
+  }
+
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ─── TESTIMONIAL ─── */
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 36px;
+  }
+
+  .testimonial {
+    background: var(--bg2);
+    border: 1px solid var(--border2);
+    border-radius: 16px;
+    padding: 20px;
+  }
+
+  .testimonial-stars {
+    color: var(--accent);
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+
+  .testimonial-text {
+    font-size: 14px;
+    color: #c0c0b8;
+    line-height: 1.65;
+    margin-bottom: 14px;
+    font-style: italic;
+  }
+
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .author-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    color: #0a0a0a;
+  }
+
+  .author-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--white);
+  }
+
+  .author-tag {
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  /* HIGHLIGHT TAG */
+  .highlight-tag {
+    display: inline-block;
+    background: rgba(212,245,66,0.08);
+    border: 1px solid var(--border);
+    color: var(--accent);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 100px;
+    margin-left: 8px;
+    vertical-align: middle;
+  }
+
+  /* ─── MOCKUP ─── */
+  .mockup-wrap {
+    display: flex;
+    justify-content: center;
+    margin: 36px 0 28px;
+  }
+  .mockup-book {
+    position: relative;
+    width: 210px;
+    filter: drop-shadow(0 24px 48px rgba(212,245,66,0.18)) drop-shadow(0 8px 24px rgba(0,0,0,0.6));
+    animation: floatBook 4s ease-in-out infinite;
+  }
+  @keyframes floatBook {
+    0%, 100% { transform: translateY(0) rotate(-2deg); }
+    50% { transform: translateY(-10px) rotate(-2deg); }
+  }
+  .mockup-book svg { width: 100%; height: auto; display: block; }
+  .mockup-glow {
+    position: absolute;
+    bottom: -18px; left: 50%;
+    transform: translateX(-50%);
+    width: 150px; height: 28px;
+    background: radial-gradient(ellipse, rgba(212,245,66,0.3) 0%, transparent 70%);
+    filter: blur(8px);
+  }
+
+  /* ─── FAQ ─── */
+  .faq-list { display: flex; flex-direction: column; gap: 10px; }
+  .faq-item {
+    background: var(--bg2);
+    border: 1px solid var(--border2);
+    border-radius: 14px;
+    overflow: hidden;
+    transition: border-color 0.2s;
+  }
+  .faq-item.open { border-color: var(--border); }
+  .faq-q {
+    padding: 18px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    cursor: pointer;
+    user-select: none;
+    color: var(--white);
+  }
+  .faq-icon {
+    width: 26px; height: 26px; min-width: 26px;
+    background: rgba(212,245,66,0.08);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px; font-weight: 300;
+    color: var(--accent);
+    transition: transform 0.25s;
+    line-height: 1;
+  }
+  .faq-item.open .faq-icon { transform: rotate(45deg); }
+  .faq-a {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease, padding 0.25s ease;
+    font-size: 14px; color: var(--muted); line-height: 1.65;
+    padding: 0 20px;
+  }
+  .faq-item.open .faq-a { max-height: 300px; padding: 0 20px 18px; }
+
+  /* ─── COUNTDOWN ─── */
+  .countdown-bar {
+    background: rgba(212,245,66,0.05);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px 18px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 24px;
+  }
+  .countdown-label { font-size: 12px; color: var(--muted); flex: 1; line-height: 1.4; }
+  .countdown-label strong { display: block; color: #e74c3c; font-size: 13px; margin-bottom: 2px; }
+  .countdown-timer { display: flex; gap: 6px; }
+  .cd-block {
+    text-align: center;
+    background: var(--bg3);
+    border: 1px solid var(--border2);
+    border-radius: 8px;
+    padding: 6px 10px;
+    min-width: 44px;
+  }
+  .cd-num {
+    font-family: 'Syne', sans-serif;
+    font-size: 20px; font-weight: 800;
+    color: var(--accent); display: block; line-height: 1;
+  }
+  .cd-unit { font-size: 9px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+
+  /* ─── MOBILE FIXES ─── */
+  @media (max-width: 380px) {
+    .headline { font-size: 30px; }
+    .cta-primary { font-size: 15px; padding: 16px 18px; }
+    .price-new { font-size: 44px; }
+    .proof-number { font-size: 22px; }
+    .section-title { font-size: 24px; }
+    .cd-num { font-size: 17px; }
+    .cd-block { min-width: 38px; padding: 5px 7px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  🔥 Oferta promocional por tempo limitado — garanta R$27,90 agora
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+
+    <div class="badge">E-book + Método Exclusivo</div>
+
+    <h1 class="headline">
+      Sua <em>Primeira Venda</em> no Digital em até 48 Horas
+    </h1>
+
+    <p class="subheadline">
+      O método simples e direto que <strong>iniciantes estão usando</strong> para fazer a primeira venda online — mesmo sem experiência, sem audiência e sem muito dinheiro.
+    </p>
+
+    <a href="https://pay.cakto.com.br/337xpa6_870744" class="cta-primary">
+      QUERO MEU ACESSO AGORA →
+    </a>
+
+    <p class="cta-sub">
+      <span>✓ Acesso imediato</span> &nbsp;·&nbsp; Garantia de 7 dias &nbsp;·&nbsp; Sem risco
+    </p>
+
+    <!-- MOCKUP E-BOOK -->
+    <div class="mockup-wrap">
+      <div class="mockup-book">
+        <svg viewBox="0 0 220 290" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="bookCover" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#1a1a1a"/>
+              <stop offset="100%" style="stop-color:#0d0d0d"/>
+            </linearGradient>
+            <linearGradient id="bookSpine" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#d4f542"/>
+              <stop offset="100%" style="stop-color:#b8e032"/>
+            </linearGradient>
+            <linearGradient id="accentLine" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#d4f542;stop-opacity:1"/>
+              <stop offset="100%" style="stop-color:#d4f542;stop-opacity:0"/>
+            </linearGradient>
+          </defs>
+          <!-- Shadow pages -->
+          <rect x="22" y="8" width="190" height="272" rx="6" fill="#222" opacity="0.5"/>
+          <rect x="18" y="5" width="190" height="272" rx="6" fill="#1a1a1a" opacity="0.7"/>
+          <!-- Main cover -->
+          <rect x="14" y="2" width="192" height="276" rx="8" fill="url(#bookCover)" stroke="#2a2a2a" stroke-width="1"/>
+          <!-- Spine accent -->
+          <rect x="14" y="2" width="10" height="276" rx="4" fill="url(#bookSpine)"/>
+          <!-- Top accent line -->
+          <rect x="28" y="24" width="160" height="3" rx="1.5" fill="url(#accentLine)" opacity="0.8"/>
+          <!-- Icon area -->
+          <circle cx="110" cy="90" r="34" fill="rgba(212,245,66,0.08)" stroke="rgba(212,245,66,0.2)" stroke-width="1.5"/>
+          <text x="110" y="100" text-anchor="middle" font-size="32" fill="#d4f542">⚡</text>
+          <!-- Title -->
+          <text x="110" y="148" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="13" font-weight="900" fill="#f5f5f0" letter-spacing="0.5">PRIMEIRA VENDA</text>
+          <text x="110" y="165" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="13" font-weight="900" fill="#f5f5f0" letter-spacing="0.5">EM 48H NO</text>
+          <!-- Accent highlight -->
+          <text x="110" y="182" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="14" font-weight="900" fill="#d4f542" letter-spacing="1">DIGITAL</text>
+          <!-- Divider -->
+          <rect x="60" y="196" width="100" height="1.5" rx="1" fill="rgba(212,245,66,0.25)"/>
+          <!-- Subtitle -->
+          <text x="110" y="216" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#888880" letter-spacing="2">MÉTODO COMPLETO</text>
+          <!-- Bottom badge -->
+          <rect x="55" y="235" width="110" height="26" rx="13" fill="rgba(212,245,66,0.1)" stroke="rgba(212,245,66,0.25)" stroke-width="1"/>
+          <text x="110" y="252" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="700" fill="#d4f542" letter-spacing="1">E-BOOK + BÔNUS</text>
+          <!-- Shine effect -->
+          <rect x="14" y="2" width="50" height="276" rx="8" fill="url(#shineGrad)" opacity="0.03"/>
+          <defs>
+            <linearGradient id="shineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1"/>
+              <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <div class="mockup-glow"></div>
+      </div>
+    </div>
+    <div class="proof-bar">
+      <div class="proof-bar-inner">
+        <div class="proof-item">
+          <span class="proof-number">100%</span>
+          <span class="proof-label">Focado em<br>iniciantes</span>
+        </div>
+        <div class="proof-divider"></div>
+        <div class="proof-item">
+          <span class="proof-number">Iniciantes</span>
+          <span class="proof-label">Começando<br>do zero</span>
+        </div>
+        <div class="proof-divider"></div>
+        <div class="proof-item">
+          <span class="proof-number">Aplicação</span>
+          <span class="proof-label">Rápida<br>e prática</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- BENEFÍCIOS -->
+<section>
+  <div class="container fade-in">
+    <p class="section-label">O que você vai aprender</p>
+    <h2 class="section-title">Tudo que você precisa para começar — e só isso</h2>
+    <p class="section-desc">Sem enrolação. Sem teoria inútil. Só o que realmente funciona para quem está começando agora.</p>
+
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <div class="benefit-icon">🎯</div>
+        <div class="benefit-text">
+          <h3>Como escolher o produto certo para promover</h3>
+          <p>Aprenda a identificar produtos com alta conversão sem precisar criar nada do zero.</p>
+        </div>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">⚡</div>
+        <div class="benefit-text">
+          <h3>Tráfego pago do zero — sem complicação</h3>
+          <p>Configure seu primeiro anúncio em menos de 1 hora, mesmo sem saber nada de ads.</p>
+        </div>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">💰</div>
+        <div class="benefit-text">
+          <h3>Como escalar após a primeira venda</h3>
+          <p>O passo a passo para transformar uma venda em renda consistente todos os meses.</p>
+        </div>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">🧠</div>
+        <div class="benefit-text">
+          <h3>O mapa mental do iniciante lucrativo</h3>
+          <p>Entenda o jogo antes de entrar. Evite os erros que fazem 90% desistir no começo.</p>
+        </div>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">📊</div>
+        <div class="benefit-text">
+          <h3>Análise de métricas simplificada</h3>
+          <p>Saiba exatamente o que olhar e o que ignorar nos seus primeiros anúncios.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- COMO FUNCIONA -->
+<section>
+  <div class="container fade-in">
+    <p class="section-label">Como funciona</p>
+    <h2 class="section-title">3 passos para sua primeira venda</h2>
+    <p class="section-desc">O método é simples porque foi criado para quem nunca vendeu nada online antes.</p>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <h3>Escolha o produto e configure tudo em 1h</h3>
+          <p>Com o guia passo a passo do e-book, você vai escolher o produto certo e configurar sua estrutura básica em menos de uma hora.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <h3>Suba seu primeiro anúncio com R$10/dia</h3>
+          <p>Usamos um método simples e de baixo custo para testar rápido e já gerar os primeiros cliques qualificados.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <h3>Esteja preparado para sua primeira venda</h3>
+          <p>Seguindo o método, você tem condições reais de receber sua primeira comissão nas próximas 48 horas.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DEPOIMENTOS -->
+    <div class="testimonials">
+      <div class="testimonial">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"Eu não acreditava que funcionaria pra mim. Sem experiência, sem audiência, sem nada. Segui o método na sexta à noite — sábado de manhã acordei com a notificação de venda no celular. Chorei de verdade. Finalmente provei pra mim mesmo que era possível."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background: var(--accent);">JM</div>
+          <div>
+            <div class="author-name">João M.</div>
+            <div class="author-tag">Iniciante · São Paulo — 1ª venda em 18h</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"Tinha medo de jogar dinheiro fora com anúncio. Mas o método é tão direto que em 2 dias já tinha recuperado o investimento — e ainda sobrou. O que mais me surpreendeu foi a simplicidade. Não tem enrolação, não tem segredo escondido. Só resultado."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background: #7ed321;">CF</div>
+          <div>
+            <div class="author-name">Camila F.</div>
+            <div class="author-tag">Professora · Recife — 3 vendas nos primeiros 2 dias</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"Tentei outros cursos antes. Gastei muito mais e não vendi nada. Aqui, com R$27,90 e seguindo o passo a passo, fiz minha primeira venda real. Agora entendo o que estava errando. Esse e-book deveria custar muito mais."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background: #5bc8f5;">RL</div>
+          <div>
+            <div class="author-name">Rafael L.</div>
+            <div class="author-tag">Autônomo · Belo Horizonte — vendeu no 1º dia de anúncio</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- QUEBRA DE OBJEÇÕES -->
+<section>
+  <div class="container fade-in">
+    <p class="section-label">Suas dúvidas respondidas</p>
+    <h2 class="section-title">Isso funciona para mim?</h2>
+
+    <div class="objections-list">
+      <div class="objection">
+        <div class="objection-q">"Não tenho experiência nenhuma com marketing digital"</div>
+        <div class="objection-a">Perfeito. O método foi criado <strong>especialmente para iniciantes</strong>. Você não precisa de nenhum conhecimento prévio. Começa do absoluto zero.</div>
+      </div>
+      <div class="objection">
+        <div class="objection-q">"Não tenho muito dinheiro para anunciar"</div>
+        <div class="objection-a">O método funciona com <strong>a partir de R$10 por dia</strong>. Você aprende a ser eficiente antes de escalar o investimento.</div>
+      </div>
+      <div class="objection">
+        <div class="objection-q">"Já tentei outras coisas e não funcionou"</div>
+        <div class="objection-a">A maioria das pessoas falha porque segue métodos complexos demais. Aqui, a abordagem é <strong>direta, testada e sem enrolação</strong>.</div>
+      </div>
+      <div class="objection">
+        <div class="objection-q">"Não tenho produto para vender"</div>
+        <div class="objection-a">Você não precisa criar nada. Você vai trabalhar como <strong>afiliado</strong> — promovendo produtos de outras pessoas e ganhando comissões.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- OFERTA -->
+<section id="oferta">
+  <div class="container fade-in">
+    <p class="section-label">A oferta</p>
+
+    <div class="offer-card">
+      <div class="offer-badge">🔥 Preço especial de lançamento</div>
+
+      <h2 class="offer-title">
+        Primeira Venda em 48h no Digital
+        <span class="highlight-tag">PDF + Bônus</span>
+      </h2>
+
+      <p class="offer-desc">
+        O guia completo para você sair do zero e fazer sua primeira venda online usando tráfego pago — com método simples, direto e pensado para iniciantes.
+      </p>
+
+      <ul class="includes">
+        <li>E-book completo "Primeira Venda em 48h" (127 páginas)</li>
+        <li>Checklist de configuração rápida — passo a passo</li>
+        <li>Planilha de controle de campanhas para iniciantes</li>
+        <li>Bônus: Script de anúncio que converte do zero</li>
+        <li>Bônus: Seleção dos 10 melhores produtos para começar</li>
+        <li>Acesso vitalício + atualizações gratuitas</li>
+      </ul>
+
+      <div class="price-block">
+        <div class="price-old">De R$ 97,00</div>
+        <div class="price-new"><sup>R$</sup>27<span style="font-size:28px;font-weight:700">,90</span></div>
+        <div class="price-note">Pagamento único · Acesso imediato</div>
+      </div>
+
+      <!-- COUNTDOWN -->
+      <div class="countdown-bar">
+        <div class="countdown-label">
+          <strong>⚠️ Preço promocional</strong>
+          Pode sair do ar a qualquer momento
+        </div>
+        <div class="countdown-timer">
+          <div class="cd-block"><span class="cd-num" id="cd-h">00</span><span class="cd-unit">hrs</span></div>
+          <div class="cd-block"><span class="cd-num" id="cd-m">00</span><span class="cd-unit">min</span></div>
+          <div class="cd-block"><span class="cd-num" id="cd-s">00</span><span class="cd-unit">seg</span></div>
+        </div>
+      </div>
+
+      <a href="https://pay.cakto.com.br/337xpa6_870744" class="cta-primary" onclick="if(typeof fbq!=='undefined'){fbq('track','InitiateCheckout',{value:27.90,currency:'BRL',content_name:'Primeira Venda em 48h no Digital'});}">
+        QUERO COMEÇAR AGORA →
+      </a>
+
+      <p class="cta-sub" style="margin-top: 14px;">
+        <span>✓ Pagamento 100% seguro</span> &nbsp;·&nbsp; Cartão ou Pix
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- GARANTIA -->
+<section>
+  <div class="container fade-in">
+    <div class="guarantee-card">
+      <span class="guarantee-icon">🛡️</span>
+      <h2 class="guarantee-title">Garantia <span>incondicional</span> de 7 dias</h2>
+      <p class="guarantee-text">
+        Se por qualquer motivo você não ficar satisfeito, basta enviar um e-mail em até 7 dias e devolvemos 100% do seu dinheiro. Sem perguntas, sem burocracia. O risco é todo nosso.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="container fade-in">
+    <p class="section-label" style="justify-content: center; text-align: center;">A decisão é agora</p>
+    <h2 class="section-title">Você pode continuar esperando o momento certo.<br>Ou pode começar agora.</h2>
+    <p class="section-desc">Milhares de pessoas estão fazendo suas primeiras vendas online todos os dias. A única diferença entre elas e você é uma decisão.</p>
+
+    <a href="https://pay.cakto.com.br/337xpa6_870744" class="cta-primary">
+      QUERO MINHA PRIMEIRA VENDA AGORA →
+    </a>
+
+    <div class="urgency-bar">
+      <div class="urgency-dot"></div>
+      Preço promocional pode sair do ar em qualquer momento — garante o seu agora
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="container fade-in">
+    <p class="section-label">Perguntas frequentes</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">Como recebo o e-book após a compra? <span class="faq-icon">+</span></div>
+        <div class="faq-a">Imediatamente após o pagamento, você recebe um e-mail com o link de acesso. O download é instantâneo — em segundos o arquivo já está no seu celular ou computador.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Preciso aparecer ou criar conteúdo? <span class="faq-icon">+</span></div>
+        <div class="faq-a">Não. O método é baseado em tráfego pago (anúncios). Você não precisa de câmera, redes sociais ou aparecer em nenhum lugar. Totalmente anônimo se quiser.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Funciona mesmo para iniciantes do zero? <span class="faq-icon">+</span></div>
+        <div class="faq-a">Sim. O e-book foi criado especificamente para quem nunca vendeu nada online. Cada passo é explicado de forma simples, sem jargões técnicos.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Preciso de muito dinheiro para começar? <span class="faq-icon">+</span></div>
+        <div class="faq-a">Não. O método funciona com investimento a partir de R$10/dia em anúncios. Você aprende a ser eficiente antes de escalar.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">E se eu não gostar? Tem garantia? <span class="faq-icon">+</span></div>
+        <div class="faq-a">Sim. Você tem 7 dias de garantia incondicional. Se não gostar por qualquer motivo, devolvemos 100% do seu dinheiro sem perguntas.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <p>© 2025 Primeira Venda Digital. Todos os direitos reservados.</p>
+    <p style="margin-top: 8px;">
+      <a href="#">Termos de Uso</a> &nbsp;·&nbsp;
+      <a href="#">Política de Privacidade</a> &nbsp;·&nbsp;
+      <a href="#">Suporte</a>
+    </p>
+    <p style="margin-top: 12px; font-size: 11px; line-height: 1.8; max-width: 480px; margin-left: auto; margin-right: auto; color: #444440;">
+      Este produto é um e-book digital. Os resultados mencionados são individuais e podem variar. Rentabilidade passada não garante resultados futuros. Leia os termos completos antes de comprar.
+    </p>
+  </div>
+</footer>
+
+<script>
+  // Scroll-triggered fade animations
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.add('visible');
+        }, i * 60);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+  // Smooth CTA pulse on scroll into view
+  const ctaButtons = document.querySelectorAll('.cta-primary');
+  const ctaObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.animation = 'none';
+        void entry.target.offsetWidth;
+        entry.target.style.animation = '';
+      }
+    });
+  }, { threshold: 0.5 });
+  ctaButtons.forEach(btn => ctaObserver.observe(btn));
+
+  // ─── COUNTDOWN TIMER ───
+  function startCountdown() {
+    const saved = localStorage.getItem('cd_end');
+    let endTime;
+    if (saved) {
+      endTime = parseInt(saved);
+    } else {
+      endTime = Date.now() + (23 * 3600 + 47 * 60 + 33) * 1000;
+      localStorage.setItem('cd_end', endTime);
+    }
+    function tick() {
+      const diff = Math.max(0, endTime - Date.now());
+      const h = Math.floor(diff / 3600000);
+      const m = Math.floor((diff % 3600000) / 60000);
+      const s = Math.floor((diff % 60000) / 1000);
+      const pad = n => String(n).padStart(2, '0');
+      document.getElementById('cd-h').textContent = pad(h);
+      document.getElementById('cd-m').textContent = pad(m);
+      document.getElementById('cd-s').textContent = pad(s);
+      if (diff > 0) setTimeout(tick, 1000);
+    }
+    tick();
+  }
+  startCountdown();
+
+  // ─── FAQ ACCORDION ───
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.parentElement;
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+</script>
+
+</body>
+</html>
